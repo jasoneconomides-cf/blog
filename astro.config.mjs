@@ -4,5 +4,11 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   site: 'https://blog.ukpetpassport.com',
-  integrations: [sitemap(), mdx()]
+  integrations: [
+    sitemap(),
+    mdx(),
+  ],
+  build: {
+    format: 'directory',
+  },
 });
