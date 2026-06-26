@@ -1,0 +1,168 @@
+---
+const {
+  title = 'UK Pet Passport Blog',
+  description = 'Free guidance for UK pet owners travelling abroad after Brexit.',
+  pubDate,
+  author = 'UK Pet Passport'
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const publishedTime = pubDate ? new Date(pubDate).toISOString() : null;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" type="application/rss+xml" title="UK Pet Passport Blog RSS" href="/rss.xml" />
+    <meta name="description" content={description} />
+    <meta name="author" content={author} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="UK Pet Passport Blog" />
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    <style>
+      :root {
+        color-scheme: light;
+        --text: #1d252d;
+        --muted: #5c6670;
+        --line: #d9e0e7;
+        --link: #005ea5;
+        --bg: #ffffff;
+        --soft: #f4f7fa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.15em;
+      }
+
+      a:hover {
+        text-decoration-thickness: 0.14em;
+      }
+
+      header,
+      main,
+      footer {
+        width: min(100% - 32px, 720px);
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 28px 0 20px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      header a {
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 34px 0 48px;
+      }
+
+      footer {
+        padding: 24px 0 40px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        margin: 1.8em 0 0.55em;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: clamp(2rem, 6vw, 3rem);
+      }
+
+      h2 {
+        font-size: 1.55rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      p,
+      ul,
+      ol {
+        margin: 0 0 1.15em;
+      }
+
+      li {
+        margin: 0.35em 0;
+      }
+
+      .description {
+        color: var(--muted);
+        font-size: 1.12rem;
+      }
+
+      .post-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .post-list li {
+        padding: 20px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .post-list a {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      time {
+        display: block;
+        margin: 0.35rem 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      code {
+        padding: 0.1em 0.25em;
+        background: var(--soft);
+        border-radius: 4px;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/">UK Pet Passport Blog</a>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>For pet travel services, visit <a href="https://ukpetpassport.com">ukpetpassport.com</a>.</p>
+    </footer>
+  </body>
+</html>

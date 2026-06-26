@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = await Astro.glob('../content/posts/*.md');
+
+const sortedPosts = posts
+  .map((post) => {
+    const slug = post.file.split('/').pop().replace(/\.md$/, '');
+    return { ...post, slug };
+  })
+  .sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+
+const formatDate = (date) =>
+  new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  }).format(new Date(date));
+---
+
+<BaseLayout
+  title="UK Pet Passport Blog"
+  description="Free guidance for UK pet owners travelling abroad after Brexit."
+>
+  <h1>UK Pet Passport Blog</h1>
+  <p class="description">Free guidance for UK pet owners travelling abroad after Brexit.</p>
+
+  <ul class="post-list">
+    {
+      sortedPosts.map((post) => (
+        <li>
+          <a href={`/posts/${post.slug}/`}>{post.frontmatter.title}</a>
+          <time datetime={post.frontmatter.pubDate}>{formatDate(post.frontmatter.pubDate)}</time>
+          <p>{post.frontmatter.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
