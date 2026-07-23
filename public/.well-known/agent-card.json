@@ -1,0 +1,36 @@
+{
+  "name": "UK Pet Passport Blog",
+  "description": "A read-only agent interface for discovering UK pet travel guidance.",
+  "version": "1.0.0",
+  "url": "https://blog.ukpetpassport.com/",
+  "protocolVersion": "0.3.0",
+  "preferredTransport": "HTTP+JSON",
+  "supportedInterfaces": [
+    {
+      "url": "https://blog.ukpetpassport.com/.well-known/api-catalog",
+      "transport": "HTTP+JSON",
+      "protocolVersion": "0.3.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": ["text"],
+  "defaultOutputModes": ["text", "application/json"],
+  "skills": [
+    {
+      "id": "animal-health-certificate-guidance",
+      "name": "Animal Health Certificate guidance",
+      "description": "Find guidance about Animal Health Certificates for travel from Great Britain.",
+      "tags": ["pets", "travel", "animal-health-certificate"]
+    },
+    {
+      "id": "country-pet-travel-guidance",
+      "name": "Country pet travel guidance",
+      "description": "Find destination-specific pet travel requirements.",
+      "tags": ["pets", "travel", "europe"]
+    }
+  ]
+}

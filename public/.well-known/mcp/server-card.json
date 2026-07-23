@@ -1,0 +1,33 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card.json",
+  "serverInfo": {
+    "name": "blog.ukpetpassport.com",
+    "title": "UK Pet Passport Blog",
+    "version": "1.0.0",
+    "description": "Read-only discovery for UK pet travel guidance."
+  },
+  "transports": [
+    {
+      "type": "http",
+      "endpoint": "https://blog.ukpetpassport.com/.well-known/api-catalog"
+    }
+  ],
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "find-pet-travel-guidance",
+      "description": "Find UK pet travel guidance articles by topic."
+    }
+  ]
+}

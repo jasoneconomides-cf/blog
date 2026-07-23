@@ -2,3 +2,19 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
+  Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+/
+  Link: </.well-known/api-catalog>; rel="api-catalog", </auth.md>; rel="service-doc", </.well-known/mcp/server-card.json>; rel="describedby", </.well-known/agent-skills/index.json>; rel="describedby", </.well-known/agent-card.json>; rel="describedby"
+
+/.well-known/api-catalog
+  Content-Type: application/linkset+json; charset=utf-8
+
+/.well-known/*
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/agent-skills/*/SKILL.md
+  Content-Type: text/markdown; charset=utf-8
+
+/auth.md
+  Content-Type: text/markdown; charset=utf-8
