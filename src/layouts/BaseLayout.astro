@@ -164,5 +164,74 @@ const publishedTime = pubDate ? new Date(pubDate).toISOString() : null;
     <footer>
       <p>For pet travel services, visit <a href="https://ukpetpassport.com">ukpetpassport.com</a>.</p>
     </footer>
+    <script is:inline>
+      (() => {
+        const modelContext = navigator.modelContext;
+        if (!modelContext?.registerTool) return;
+
+        const articles = [
+          {
+            title: "How to get an Animal Health Certificate",
+            url: "https://blog.ukpetpassport.com/posts/animal-health-certificate-guide/",
+            topics: ["animal health certificate", "ahc", "documents"],
+          },
+          {
+            title: "Taking your dog to France",
+            url: "https://blog.ukpetpassport.com/posts/uk-to-france-dog-after-brexit/",
+            topics: ["france", "dog", "travel"],
+          },
+          {
+            title: "Pet travel after Brexit",
+            url: "https://blog.ukpetpassport.com/posts/uk-pet-passport-return-2027/",
+            topics: ["brexit", "eu", "travel"],
+          },
+        ];
+
+        modelContext.registerTool({
+          name: "list_pet_travel_articles",
+          description: "List UK Pet Passport Blog guidance articles for agents and travellers.",
+          inputSchema: {
+            type: "object",
+            properties: {},
+            additionalProperties: false,
+          },
+          execute: async () => ({
+            content: [{ type: "text", text: JSON.stringify(articles) }],
+          }),
+        });
+
+        modelContext.registerTool({
+          name: "find_pet_travel_guidance",
+          description: "Find relevant UK pet travel guidance by destination, document, or topic.",
+          inputSchema: {
+            type: "object",
+            properties: {
+              topic: {
+                type: "string",
+                description: "A destination, document, or pet travel topic.",
+              },
+            },
+            required: ["topic"],
+            additionalProperties: false,
+          },
+          execute: async ({ topic }) => {
+            const query = String(topic).toLowerCase();
+            const matches = articles.filter((article) =>
+              [article.title, ...article.topics].some((value) =>
+                value.toLowerCase().includes(query),
+              ),
+            );
+            return {
+              content: [
+                {
+                  type: "text",
+                  text: JSON.stringify(matches.length ? matches : articles),
+                },
+              ],
+            };
+          },
+        });
+      })();
+    </script>
   </body>
 </html>
