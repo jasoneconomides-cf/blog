@@ -1,0 +1,36 @@
+{
+  "$schema": "https://www.rfc-editor.org/rfc/rfc9727.json",
+  "title": "UK Pet Passport Blog Resource Catalog",
+  "description": "Machine-readable discovery links for UK pet travel guidance.",
+  "linkset": [
+    {
+      "anchor": "https://blog.ukpetpassport.com/",
+      "service-desc": [
+        {
+          "href": "https://blog.ukpetpassport.com/rss.xml",
+          "type": "application/rss+xml",
+          "title": "Blog RSS feed"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://blog.ukpetpassport.com/",
+          "type": "text/html",
+          "title": "UK Pet Passport Blog"
+        },
+        {
+          "href": "https://blog.ukpetpassport.com/auth.md",
+          "type": "text/markdown",
+          "title": "Agent access and registration guidance"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://blog.ukpetpassport.com/.well-known/agent-skills/index.json",
+          "type": "application/json",
+          "title": "Agent skills index"
+        }
+      ]
+    }
+  ]
+}

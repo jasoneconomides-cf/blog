@@ -1,0 +1,13 @@
+{
+  "issuer": "https://ukpetpassport.com",
+  "authorization_endpoint": "https://ukpetpassport.com/.well-known/oauth-authorize",
+  "token_endpoint": "https://ukpetpassport.com/.well-known/oauth-token",
+  "jwks_uri": "https://ukpetpassport.com/.well-known/jwks.json",
+  "registration_endpoint": "https://ukpetpassport.com/.well-known/oauth-register",
+  "scopes_supported": ["read:content"],
+  "response_types_supported": ["code"],
+  "grant_types_supported": ["authorization_code", "client_credentials"],
+  "token_endpoint_auth_methods_supported": ["none"],
+  "service_documentation": "https://blog.ukpetpassport.com/auth.md",
+  "code_challenge_methods_supported": ["S256"]
+}

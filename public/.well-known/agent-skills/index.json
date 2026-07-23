@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "animal-health-certificate",
+      "type": "skill-md",
+      "description": "Guidance for obtaining and using an Animal Health Certificate for pet travel.",
+      "url": "https://blog.ukpetpassport.com/.well-known/agent-skills/animal-health-certificate/SKILL.md",
+      "digest": "sha256:40bed98d56531112f17ed299c8419ad199f87cd5ed5747a67d980d81d51c5eb0"
+    },
+    {
+      "name": "france-pet-travel",
+      "type": "skill-md",
+      "description": "Guidance for taking a pet from the UK to France after Brexit.",
+      "url": "https://blog.ukpetpassport.com/.well-known/agent-skills/france-pet-travel/SKILL.md",
+      "digest": "sha256:9a2ef0770fc7f5d71e1ba01a1bd1688837f9ec069bbf7ffcbf25046990718a2a"
+    },
+    {
+      "name": "pet-passport-updates",
+      "type": "skill-md",
+      "description": "Guidance for evaluating reports about changes to UK and EU pet passport policy.",
+      "url": "https://blog.ukpetpassport.com/.well-known/agent-skills/pet-passport-updates/SKILL.md",
+      "digest": "sha256:81d595477376b2832d8ff0c581dbca517e7d2bb770ec232bc76ed5f6c310d47a"
+    }
+  ]
+}
