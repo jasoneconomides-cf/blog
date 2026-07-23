@@ -10,6 +10,9 @@ GOV.UK says pet owners travelling to an EU country must make sure their pet is m
 
 This guide is general information only. Always check GOV.UK and your vet before booking travel.
 
+**The paperwork can still catch people out.**
+One Animal Health Certificate can cover up to 5 pets, but you still need the timing, microchip details, rabies records and return rules right before you travel.
+
 ## What an animal health certificate does
 
 An AHC confirms that your pet meets the EU pet travel requirements at the time of travel. It records key details such as your pet's microchip number, rabies vaccination history, owner information and the destination country.
