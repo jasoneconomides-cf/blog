@@ -1,7 +1,7 @@
 ---
 const {
   title = 'UK Pet Passport Blog',
-  description = 'Free guidance for UK pet owners travelling abroad after Brexit.',
+  description = 'GOV.UK-sourced guidance for UK pet owners travelling abroad after Brexit.',
   pubDate,
   author = 'UK Pet Passport'
 } = Astro.props;
@@ -162,6 +162,7 @@ const publishedTime = pubDate ? new Date(pubDate).toISOString() : null;
       <slot />
     </main>
     <footer>
+      <p>This blog provides general information only. Always check the latest <a href="https://www.gov.uk/taking-your-pet-abroad">GOV.UK pet travel guidance</a> and confirm your plans with an Official Veterinarian before travelling.</p>
       <p>For pet travel services, visit <a href="https://ukpetpassport.com">ukpetpassport.com</a>.</p>
     </footer>
     <script is:inline>

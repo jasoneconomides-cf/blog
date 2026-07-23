@@ -1,12 +1,12 @@
 ---
 title: "Will the UK Pet Passport Return in 2027?"
-description: "A factual look at whether UK pet passports are coming back and what pet owners should use for EU travel now."
+description: "A factual look at the planned return of multi-use pet passports and what UK pet owners should use for EU travel now."
 pubDate: "2026-06-26"
 ---
 
-Many UK pet owners still ask whether the UK pet passport will return in 2027. As of 26 June 2026, GOV.UK has not confirmed a return of the old Great Britain pet passport system for routine travel from Great Britain to the EU.
+Many UK pet owners still ask whether the UK pet passport will return in 2027. The UK and EU have agreed to work towards arrangements that would make pet travel easier, including a multi-use pet passport for travel to the EU, but the scheme has not yet replaced the current AHC rules.
 
-For now, the practical answer is simple: if you live in Great Britain and want to take a dog, cat or ferret to an EU country, plan around the current GOV.UK rules rather than waiting for a possible future scheme.
+As of 23 July 2026, the practical answer is simple: if you live in Great Britain and want to take a dog, cat or ferret to an EU country, plan around the current GOV.UK rules rather than relying on a future scheme.
 
 ## What changed after Brexit?
 
@@ -20,6 +20,12 @@ GOV.UK published updated guidance in 2026 explaining that Great Britain resident
 
 That matters for owners who previously used an EU-issued pet passport to avoid getting a new AHC for each trip.
 
+## Are multi-use pet passports agreed?
+
+In written parliamentary answers, the government has said the UK and EU agreed to work towards a common Sanitary and Phytosanitary Area after the UK-EU Leaders' Summit on 19 May 2025. The government also said this would mean pet owners will be able to get a multi-use pet passport valid for travel to the EU instead of getting an AHC for each trip.
+
+That is different from saying the new passport is already available. Until GOV.UK publishes the new process, eligibility and start date, GB residents should continue to use the current animal health certificate route for EU travel.
+
 ## What should pet owners do now?
 
 Until official rules change, the safest planning steps are:
@@ -32,10 +38,10 @@ Until official rules change, the safest planning steps are:
 
 ## Could the rules change by 2027?
 
-Pet travel rules can change, but travel plans should be based on rules that are currently in force. A future UK-EU agreement or domestic policy update would need to be reflected in official guidance before pet owners could rely on it.
+Pet travel rules can change, but travel plans should be based on rules that are currently in force. The UK-EU direction of travel is towards a cheaper, easier, multi-use document, but implementation and timing remain unresolved.
 
 The best source remains GOV.UK. If a UK pet passport return is announced, GOV.UK should publish updated instructions explaining who can use it, where it is valid and what vets need to issue.
 
 ## Source
 
-This guide is based on GOV.UK guidance: [Taking your pet dog, cat or ferret abroad](https://www.gov.uk/taking-your-pet-abroad), [New EU rules for pet travel for GB residents](https://www.gov.uk/government/news/new-eu-rules-for-pet-travel-for-gb-residents) and [Bringing your pet dog, cat or ferret to Great Britain](https://www.gov.uk/bring-pet-to-great-britain).
+This guide is based on GOV.UK guidance: [Taking your pet dog, cat or ferret abroad](https://www.gov.uk/taking-your-pet-abroad), [New EU rules for pet travel for GB residents](https://www.gov.uk/government/news/new-eu-rules-for-pet-travel-for-gb-residents), [Bringing your pet dog, cat or ferret to Great Britain](https://www.gov.uk/bring-pet-to-great-britain) and the parliamentary answer on [Pet Travel Scheme: UK Relations with EU](https://questions-statements.parliament.uk/written-questions/detail/2026-05-14/1541/).

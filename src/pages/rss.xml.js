@@ -18,7 +18,7 @@ export async function GET(context) {
 
   return rss({
     title: 'UK Pet Passport Blog',
-    description: 'Free guidance for UK pet owners travelling abroad after Brexit.',
+    description: 'GOV.UK-sourced guidance for UK pet owners travelling abroad after Brexit.',
     site: context.site,
     items
   });
