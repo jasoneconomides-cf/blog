@@ -1,6 +1,3 @@
-import { parseHTML } from "linkedom";
-import TurndownService from "turndown";
-
 const MARKDOWN_ACCEPT = /\btext\/markdown\b/i;
 
 export async function onRequest(context) {
@@ -18,24 +15,15 @@ export async function onRequest(context) {
   }
 
   const html = await response.text();
-  const { document } = parseHTML(html);
-
-  document
-    .querySelectorAll("script, style, noscript, svg")
-    .forEach((element) => element.remove());
-
-  const title = document.querySelector("title")?.textContent?.trim();
-  const canonical = document
-    .querySelector('link[rel="canonical"]')
-    ?.getAttribute("href");
-  const main = document.querySelector("main") || document.body;
-  const turndown = new TurndownService({
-    bulletListMarker: "-",
-    codeBlockStyle: "fenced",
-    headingStyle: "atx",
-  });
-
-  const body = turndown.turndown(main.innerHTML).trim();
+  const title = decodeEntities(
+    html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.trim() || "",
+  );
+  const canonical =
+    html.match(
+      /<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["'][^>]*>/i,
+    )?.[1] || "";
+  const main = html.match(/<main[^>]*>([\s\S]*?)<\/main>/i)?.[1] || html;
+  const body = htmlToMarkdown(main);
   const preamble = [
     title ? `# ${title}` : "",
     canonical ? `Source: ${canonical}` : "",
@@ -73,4 +61,44 @@ function appendVary(value, header) {
   }
 
   return fields.join(", ");
+}
+
+function htmlToMarkdown(html) {
+  return decodeEntities(
+    html
+      .replace(/<(script|style|noscript|svg)\b[^>]*>[\s\S]*?<\/\1>/gi, "")
+      .replace(/<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi, (_, level, text) =>
+        `${"#".repeat(Number(level))} ${stripTags(text)}\n\n`,
+      )
+      .replace(
+        /<a[^>]+href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi,
+        (_, href, text) => `[${stripTags(text)}](${href})`,
+      )
+      .replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, (_, text) =>
+        `- ${stripTags(text)}\n`,
+      )
+      .replace(/<(p|div|section|article|header|footer)[^>]*>/gi, "")
+      .replace(/<\/(p|div|section|article|header|footer)>/gi, "\n\n")
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<(strong|b)[^>]*>([\s\S]*?)<\/\1>/gi, "**$2**")
+      .replace(/<(em|i)[^>]*>([\s\S]*?)<\/\1>/gi, "*$2*")
+      .replace(/<code[^>]*>([\s\S]*?)<\/code>/gi, "`$1`")
+      .replace(/<[^>]+>/g, "")
+      .replace(/[ \t]+\n/g, "\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim(),
+  );
+}
+
+function stripTags(value) {
+  return value.replace(/<[^>]+>/g, "").trim();
+}
+
+function decodeEntities(value) {
+  return value
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'");
 }
