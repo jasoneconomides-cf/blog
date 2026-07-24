@@ -36,6 +36,19 @@ const formatDate = (date) =>
     {image && <img class="article-image" src={image} alt={imageAlt} width="1400" height="788" />}
     <p class="description">{description}</p>
     <Content />
+
+    <aside class="bulletin-cta" aria-labelledby="bulletin-title">
+      <p class="bulletin-eyebrow">UK Pet Passport Bulletin</p>
+      <h2 id="bulletin-title">Waiting for UK pet passports to return?</h2>
+      <p>
+        Join the bulletin for clear updates when official UK/EU pet-travel guidance changes.
+        While you wait, we’ll send you our free pre-travel checklist.
+      </p>
+      <a href="https://ukpetpassport.com/?utm_source=blog&utm_medium=article&utm_campaign=pet-passport-bulletin#checklist">
+        Join the bulletin and get the checklist
+      </a>
+      <small>Free checklist. Occasional updates. No spam. Unsubscribe any time.</small>
+    </aside>
   </article>
 
   <style>
@@ -69,6 +82,58 @@ const formatDate = (date) =>
       object-fit: cover;
       margin: 0 0 1.5rem;
       border-radius: 8px;
+    }
+
+    .bulletin-cta {
+      margin: 3rem 0 0;
+      padding: 28px;
+      border: 1px solid #ddd6fe;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #f5f3ff 0%, #fff7ed 100%);
+      box-shadow: 0 16px 36px rgba(45, 27, 105, 0.08);
+    }
+
+    .bulletin-cta .bulletin-eyebrow {
+      margin: 0 0 8px;
+      color: #7c3aed;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .bulletin-cta h2 {
+      margin: 0 0 12px;
+      color: #1a1a2e;
+    }
+
+    .bulletin-cta p {
+      margin-bottom: 18px;
+    }
+
+    .bulletin-cta a {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: #f59e0b;
+      color: #1a1a2e;
+      font-weight: 800;
+      line-height: 1.25;
+      text-decoration: none;
+    }
+
+    .bulletin-cta a:hover {
+      background: #fbbf24;
+    }
+
+    .bulletin-cta small {
+      display: block;
+      margin-top: 12px;
+      color: #686275;
+      font-size: 0.82rem;
     }
   </style>
 </BaseLayout>
