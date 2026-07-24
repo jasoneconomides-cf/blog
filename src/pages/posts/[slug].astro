@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = post;
-const { title, description, pubDate } = post.frontmatter;
+const { title, description, pubDate, image, imageAlt, category } = post.frontmatter;
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat('en-GB', {
@@ -25,11 +25,49 @@ const formatDate = (date) =>
   }).format(new Date(date));
 ---
 
-<BaseLayout title={title} description={description} pubDate={pubDate}>
+<BaseLayout title={title} description={description} pubDate={pubDate} image={image}>
   <article>
     <h1>{title}</h1>
-    <time datetime={pubDate}>{formatDate(pubDate)}</time>
+    <p class="article-meta">
+      {category && <span>{category}</span>}
+      <time datetime={pubDate}>{formatDate(pubDate)}</time>
+    </p>
+    {image && <img class="article-image" src={image} alt={imageAlt} width="1400" height="788" />}
     <p class="description">{description}</p>
     <Content />
   </article>
+
+  <style>
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: center;
+      margin: -0.35rem 0 1.35rem;
+      color: #686275;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .article-meta span {
+      color: #7c3aed;
+    }
+
+    .article-meta time {
+      display: inline;
+      margin: 0;
+      color: #686275;
+      font-size: inherit;
+    }
+
+    .article-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      margin: 0 0 1.5rem;
+      border-radius: 8px;
+    }
+  </style>
 </BaseLayout>

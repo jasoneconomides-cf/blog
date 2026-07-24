@@ -2,6 +2,9 @@
 title: "Taking a Dog from the UK to France After Brexit"
 description: "What UK dog owners need to know before travelling to France with a dog, including microchips, rabies vaccines, AHCs and arrival checks."
 pubDate: "2026-06-26"
+image: "/images/blog/uk-to-france-dog-after-brexit.jpg"
+imageAlt: "Dog sitting in the back of a packed car at a ferry port before travelling to France."
+category: "France Travel"
 ---
 
 Taking a dog from the UK to France is still possible after Brexit, but the paperwork has changed. If you live in Great Britain and are travelling to France with your dog, GOV.UK guidance says you should usually prepare for an animal health certificate rather than relying on a Great Britain-issued pet passport.

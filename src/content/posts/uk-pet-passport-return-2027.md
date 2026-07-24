@@ -2,6 +2,9 @@
 title: "Will the UK Pet Passport Return in 2027?"
 description: "A factual look at the planned return of multi-use pet passports and what UK pet owners should use for EU travel now."
 pubDate: "2026-06-26"
+image: "/images/blog/uk-pet-passport-return-2027.jpg"
+imageAlt: "Pet travel documents and a navy passport-style booklet on a desk with a dog and cat nearby."
+category: "Pet Passport Updates"
 ---
 
 Many UK pet owners still ask whether the UK pet passport will return in 2027. The UK and EU have agreed to work towards arrangements that would make pet travel easier, including a multi-use pet passport for travel to the EU, but the scheme has not yet replaced the current AHC rules.

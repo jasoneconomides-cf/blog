@@ -2,6 +2,9 @@
 title: "Animal Health Certificate Guide for UK Pet Travel"
 description: "A practical, GOV.UK-sourced guide to animal health certificates for UK dogs, cats and ferrets travelling to the EU after Brexit."
 pubDate: "2026-06-26"
+image: "/images/blog/animal-health-certificate-guide.jpg"
+imageAlt: "Dog and cat beside pet travel paperwork, a microchip scanner and a travel carrier."
+category: "Animal Health Certificates"
 ---
 
 An animal health certificate, often called an AHC, is the document most pet owners in Great Britain need when taking a dog, cat or ferret to an EU country. Since Brexit, a Great Britain-issued pet passport is no longer valid for travel from Great Britain to the EU.

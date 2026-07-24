@@ -3,11 +3,14 @@ const {
   title = 'UK Pet Passport Blog',
   description = 'GOV.UK-sourced guidance for UK pet owners travelling abroad after Brexit.',
   pubDate,
-  author = 'UK Pet Passport'
+  author = 'UK Pet Passport',
+  image,
+  wide = false
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const publishedTime = pubDate ? new Date(pubDate).toISOString() : null;
+const imageURL = image ? new URL(image, Astro.site) : null;
 ---
 
 <!doctype html>
@@ -25,6 +28,8 @@ const publishedTime = pubDate ? new Date(pubDate).toISOString() : null;
     <meta property="og:type" content="article" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="UK Pet Passport Blog" />
+    {imageURL && <meta property="og:image" content={imageURL} />}
+    {imageURL && <meta name="twitter:card" content="summary_large_image" />}
     {publishedTime && <meta property="article:published_time" content={publishedTime} />}
     <style>
       :root {
@@ -67,14 +72,50 @@ const publishedTime = pubDate ? new Date(pubDate).toISOString() : null;
         margin: 0 auto;
       }
 
+      main.wide,
+      header,
+      footer {
+        width: min(100% - 32px, 1120px);
+      }
+
       header {
         padding: 28px 0 20px;
         border-bottom: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
       }
 
       header a {
         font-weight: 700;
         text-decoration: none;
+      }
+
+      header > a:first-child {
+        white-space: nowrap;
+      }
+
+      header nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-items: center;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      header nav a {
+        color: var(--muted);
+        font-weight: 650;
+      }
+
+      @media (max-width: 520px) {
+        header {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
       }
 
       main {
@@ -157,8 +198,12 @@ const publishedTime = pubDate ? new Date(pubDate).toISOString() : null;
   <body>
     <header>
       <a href="/">UK Pet Passport Blog</a>
+      <nav aria-label="Primary navigation">
+        <a href="https://ukpetpassport.com">Checklist</a>
+        <a href="/rss.xml">RSS</a>
+      </nav>
     </header>
-    <main>
+    <main class={wide ? 'wide' : undefined}>
       <slot />
     </main>
     <footer>
