@@ -45,6 +45,8 @@ GOV.UK advises owners to check whether their destination requires tapeworm treat
 
 If you are returning to Great Britain, your dog may need tapeworm treatment before arrival unless an exemption applies. GOV.UK says the treatment must be given no less than 24 hours and no more than 5 days before you arrive in Great Britain.
 
+Our guide to [dog tapeworm treatment for returning to Great Britain](/posts/dog-tapeworm-treatment-returning-great-britain/) explains the timing window, vet record and direct-travel exemptions in more detail.
+
 ## Source
 
 This guide is based on GOV.UK guidance: [Taking your pet dog, cat or ferret abroad](https://www.gov.uk/taking-your-pet-abroad), [Getting an animal health certificate](https://www.gov.uk/taking-your-pet-abroad/getting-an-animal-health-certificate) and [Bringing your pet dog, cat or ferret to Great Britain](https://www.gov.uk/bring-pet-to-great-britain).
