@@ -16,6 +16,28 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = post;
 const { title, description, pubDate, updatedDate, image, imageAlt, category } = post.frontmatter;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description,
+  datePublished: pubDate,
+  dateModified: updatedDate ?? pubDate,
+  image: new URL(image, Astro.site).href,
+  mainEntityOfPage: canonicalURL,
+  author: {
+    '@type': 'Organization',
+    name: 'UK Pet Passport',
+    url: 'https://ukpetpassport.com'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'UK Pet Passport',
+    url: 'https://ukpetpassport.com'
+  },
+  articleSection: category
+};
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat('en-GB', {
@@ -26,6 +48,7 @@ const formatDate = (date) =>
 ---
 
 <BaseLayout title={title} description={description} pubDate={pubDate} updatedDate={updatedDate} image={image}>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   <article>
     <h1>{title}</h1>
     <p class="article-meta">
