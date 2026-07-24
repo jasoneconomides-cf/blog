@@ -2,6 +2,7 @@
 title: "Taking a Dog from the UK to France After Brexit"
 description: "What UK dog owners need to know before travelling to France with a dog, including microchips, rabies vaccines, AHCs and arrival checks."
 pubDate: "2026-06-26"
+updatedDate: "2026-07-24"
 image: "/images/blog/uk-to-france-dog-after-brexit.jpg"
 imageAlt: "Dog sitting in the back of a packed car at a ferry port before travelling to France."
 category: "France Travel"

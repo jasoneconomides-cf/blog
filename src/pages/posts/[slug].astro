@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = post;
-const { title, description, pubDate, image, imageAlt, category } = post.frontmatter;
+const { title, description, pubDate, updatedDate, image, imageAlt, category } = post.frontmatter;
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat('en-GB', {
@@ -25,12 +25,13 @@ const formatDate = (date) =>
   }).format(new Date(date));
 ---
 
-<BaseLayout title={title} description={description} pubDate={pubDate} image={image}>
+<BaseLayout title={title} description={description} pubDate={pubDate} updatedDate={updatedDate} image={image}>
   <article>
     <h1>{title}</h1>
     <p class="article-meta">
       {category && <span>{category}</span>}
-      <time datetime={pubDate}>{formatDate(pubDate)}</time>
+      <span>Published <time datetime={pubDate}>{formatDate(pubDate)}</time></span>
+      {updatedDate && <span>Updated <time datetime={updatedDate}>{formatDate(updatedDate)}</time></span>}
     </p>
     {image && <img class="article-image" src={image} alt={imageAlt} width="1400" height="788" />}
     <p class="description">{description}</p>

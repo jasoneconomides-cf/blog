@@ -2,6 +2,7 @@
 title: "Animal Health Certificate Guide for UK Pet Travel"
 description: "A practical, GOV.UK-sourced guide to animal health certificates for UK dogs, cats and ferrets travelling to the EU after Brexit."
 pubDate: "2026-06-26"
+updatedDate: "2026-07-24"
 image: "/images/blog/animal-health-certificate-guide.jpg"
 imageAlt: "Dog and cat beside pet travel paperwork, a microchip scanner and a travel carrier."
 category: "Animal Health Certificates"

@@ -37,6 +37,7 @@ const blogSchema = {
     headline: post.frontmatter.title,
     description: post.frontmatter.description,
     datePublished: post.frontmatter.pubDate,
+    dateModified: post.frontmatter.updatedDate ?? post.frontmatter.pubDate,
     image: new URL(post.frontmatter.image, Astro.site).href,
     url: new URL(`/posts/${post.slug}/`, Astro.site).href
   }))

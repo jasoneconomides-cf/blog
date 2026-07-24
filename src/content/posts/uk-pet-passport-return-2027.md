@@ -2,6 +2,7 @@
 title: "Will the UK Pet Passport Return in 2027?"
 description: "A factual look at the planned return of multi-use pet passports and what UK pet owners should use for EU travel now."
 pubDate: "2026-06-26"
+updatedDate: "2026-07-24"
 image: "/images/blog/uk-pet-passport-return-2027.jpg"
 imageAlt: "Pet travel documents and a navy passport-style booklet on a desk with a dog and cat nearby."
 category: "Pet Passport Updates"
