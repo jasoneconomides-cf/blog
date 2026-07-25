@@ -55,6 +55,8 @@ The record needs the product name and manufacturer, the treatment date and time,
 
 Before booking, check both the official return rules and your carrier's approved route. For the wider paperwork context, see [whether the UK pet passport could return](/posts/uk-pet-passport-return-2027/).
 
+Our guide to [dog tapeworm treatment for returning to Great Britain](/posts/dog-tapeworm-treatment-returning-great-britain/) explains the timing window, vet record and direct-travel exemptions in more detail.
+
 ## Source
 
 Checked 24 July 2026 against GOV.UK guidance: [Taking your pet dog, cat or ferret abroad](https://www.gov.uk/taking-your-pet-abroad), [Getting an animal health certificate](https://www.gov.uk/taking-your-pet-abroad/getting-an-animal-health-certificate) and [tapeworm treatment for dogs returning to Great Britain](https://www.gov.uk/bring-pet-to-great-britain/tapeworm-treatment-dogs).

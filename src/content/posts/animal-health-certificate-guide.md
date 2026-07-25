@@ -37,6 +37,8 @@ After you enter the EU, the same AHC can be used for onward travel within the EU
 
 That timing means you should book the appointment close enough to departure for the certificate to stay valid, but not so late that a paperwork problem leaves no time to correct it.
 
+Dogs returning to Great Britain usually also need a separately timed treatment. Read our guide to the [24-to-120-hour tapeworm-treatment window](/posts/dog-tapeworm-treatment-returning-great-britain/) when planning the return journey.
+
 ## What to bring to the vet
 
 Take proof of your pet's microchipping date and vaccination history. The microchip must have been implanted before the rabies vaccination that is being relied on for travel.
