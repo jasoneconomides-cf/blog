@@ -6,6 +6,7 @@ const {
   updatedDate,
   author = 'UK Pet Passport',
   image,
+  ogType = 'article',
   wide = false
 } = Astro.props;
 
@@ -27,7 +28,7 @@ const imageURL = image ? new URL(image, Astro.site) : null;
     <meta name="author" content={author} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="UK Pet Passport Blog" />
     {imageURL && <meta property="og:image" content={imageURL} />}
