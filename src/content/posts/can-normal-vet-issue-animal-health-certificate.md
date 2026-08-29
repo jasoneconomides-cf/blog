@@ -1,6 +1,6 @@
 ---
-title: "Can My Normal Vet Issue an Animal Health Certificate?"
-description: "Your normal vet may issue an AHC if an Official Veterinarian at the practice is authorised to sign it. Here is what to ask before booking."
+title: "Can Normal Vets Issue Animal Health Certificates?"
+description: "Normal vets can issue animal health certificates when authorised as Official Veterinarians. Here is what to ask before booking an AHC."
 pubDate: "2026-08-29"
 image: "/images/blog/can-normal-vet-issue-animal-health-certificate.jpg"
 imageAlt: "Veterinarian scanning a relaxed dog's microchip while the owner holds a folder of pet travel records."
