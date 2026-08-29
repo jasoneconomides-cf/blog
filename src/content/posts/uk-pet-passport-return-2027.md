@@ -12,6 +12,8 @@ Many UK pet owners still ask whether the UK pet passport will return in 2027. Th
 
 As of 23 July 2026, the practical answer is simple: if you live in Great Britain and want to take a dog, cat or ferret to an EU country, plan around the current GOV.UK rules rather than relying on a future scheme.
 
+An active UK Parliament petition is also asking the Government to seek agreement for UK residents to use valid EU pet passports again. Read our separate guide to the [2026 pet passport petition, what it requests and what it does not change](/posts/pet-passport-petition-2026/).
+
 ## What changed after Brexit?
 
 Before Brexit, UK pet owners commonly used pet passports for EU travel. Since 1 January 2021, Great Britain has not been part of the EU pet passport scheme in the same way.
