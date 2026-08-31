@@ -4,6 +4,8 @@ GOV.UK-sourced guidance for UK pet owners travelling abroad after Brexit.
 
 Built with [Astro](https://astro.build) and deployed on [Cloudflare Pages](https://pages.cloudflare.com).
 
+Live site: [blog.ukpetpassport.com](https://blog.ukpetpassport.com/)
+
 ## Local development
 
 ```bash
