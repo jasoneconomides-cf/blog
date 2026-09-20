@@ -14,6 +14,19 @@ There is a limited exception for special pet food required for health-related re
 
 The simplest plan for most holidays is to identify a suitable food sold in France and buy it after entering the EU.
 
+## What happens in practice versus what the rules say
+
+Let us be realistic: many owners travel with the food their dog or cat normally eats. In public travel discussions, people commonly say they carried sealed kibble, tins, pouches or treats and were not questioned about them. Others plan around a familiar diet because changing food can upset an animal or because a particular product is difficult to find abroad.
+
+Those accounts describe individual journeys; they do not establish what is permitted. Not being asked about food on one crossing is not an exemption, and another traveller's experience is not a guarantee that your luggage or vehicle will be treated the same way.
+
+Our role is to separate those two things clearly:
+
+- **In practice:** some travellers take familiar pet food and report encountering no check or challenge.
+- **Under the published rules:** ordinary pet food containing meat, milk or products made from them should not be brought from Great Britain into the EU unless a relevant exception applies.
+
+What you decide to pack is your responsibility. We are not here to pretend every traveller behaves identically or that every arrival is inspected in the same way. We are here to tell you what the official rules permit, what the limited exception requires and how to plan a compliant alternative. We do not recommend hiding food, failing to declare restricted goods when required or treating a previous uneventful crossing as permission.
+
 ## Why is ordinary dog or cat food restricted?
 
 Great Britain is treated as a non-EU country for these personal-import rules. The European Commission says travellers entering the EU generally cannot carry meat, milk or products made from them in their personal luggage.
@@ -104,7 +117,7 @@ A safer approach is usually to order from a retailer already operating within th
 
 European Commission guidance says prohibited meat or dairy products may be confiscated and destroyed during official controls. French Customs tells travellers to declare goods subject to restrictions and present them when required.
 
-The practical lesson is to check before packing, not to hide food or rely on inconsistent reports about past border checks. A traveller saying their bag was not examined does not change the rules for your journey.
+The practical lesson is to make an informed decision before packing, not to hide food or mistake inconsistent reports about border checks for official permission. A traveller saying their bag was not examined does not change the rules for your journey.
 
 ## Does this apply throughout the EU?
 
