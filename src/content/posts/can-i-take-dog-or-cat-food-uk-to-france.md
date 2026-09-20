@@ -1,20 +1,20 @@
 ---
-title: "Can I Take Dog Food from the UK to France?"
-description: "When dog food can cross from Great Britain into France, why ingredients matter, and the limited exception for health-required pet food."
+title: "Can I Take Dog or Cat Food from the UK to France?"
+description: "Can you take dog or cat food from Great Britain to France? Learn why ingredients matter and when the limited medical-food exception may apply."
 pubDate: "2026-09-08"
-updatedDate: "2026-09-08"
+updatedDate: "2026-09-20"
 image: "/images/blog/can-i-take-dog-food-uk-to-france.jpg"
 imageAlt: "Dog owner packing pet travel supplies beside a dog, an unbranded bag of dry food and a car prepared for a journey."
 category: "France Travel"
 ---
 
-You should not take ordinary dog food containing meat, milk or products made from them from Great Britain into France. This applies to wet food, dry kibble, treats and chews if their ingredients bring them within the EU restrictions—it is the contents, not whether the food is sealed or dry, that matter.
+You should not take ordinary dog or cat food containing meat, milk or products made from them from Great Britain into France. This can include wet food, dry kibble, treats and chews. It is the ingredients—not whether the product is sealed, dry or sold as pet food—that matter.
 
-There is a limited exception for special pet food required for health-related reasons. From Great Britain, the amount must not exceed 2kg and the food must meet several packaging and storage conditions. Ordinary food does not become “medical” simply because your dog prefers it or has a sensitive stomach.
+There is a limited exception for special pet food required for health-related reasons. From Great Britain, the amount must not exceed 2kg and the food must meet several packaging and storage conditions. Ordinary food does not become “medical” simply because your dog or cat prefers it, normally eats it or has a sensitive stomach.
 
 The simplest plan for most holidays is to identify a suitable food sold in France and buy it after entering the EU.
 
-## Why is ordinary dog food restricted?
+## Why is ordinary dog or cat food restricted?
 
 Great Britain is treated as a non-EU country for these personal-import rules. The European Commission says travellers entering the EU generally cannot carry meat, milk or products made from them in their personal luggage.
 
@@ -22,11 +22,11 @@ The purpose is animal-disease control. Products of animal origin can carry patho
 
 French Customs applies these EU rules at the border. Its guidance for travellers arriving from the UK specifically identifies the prohibition on meat, meat products, milk and milk products, while recognising the limited exception for special pet food needed for health reasons.
 
-These food rules are separate from your dog's microchip, rabies vaccination and Animal Health Certificate. Having correct pet-travel paperwork does not give an exemption for the food in your car or luggage.
+These food rules are separate from your pet's microchip, rabies vaccination and Animal Health Certificate. Having correct pet-travel paperwork does not create an exemption for food carried in your car or luggage.
 
-## Does the rule include dry dog food and treats?
+## Does the rule include dry food, treats and cat-food pouches?
 
-Potentially, yes. “Dry” does not mean “permitted.” Many bags of kibble, biscuits, training treats and dental chews contain meat, animal derivatives, milk or milk products.
+Potentially, yes. “Dry” does not mean “permitted.” Many bags of dog or cat kibble, biscuits, training treats, dental chews and cat treats contain meat, animal derivatives, milk or milk products. Wet cat-food tins and pouches commonly contain animal products too.
 
 Check the full ingredient list rather than relying on the product name or front of the packet. Examples that may bring a product within the restrictions include:
 
@@ -40,15 +40,15 @@ Do not assume that a sealed factory bag, a small quantity or food intended only 
 
 If the ingredients are unclear, ask French Customs before travel or choose the lower-risk option of buying food after arrival.
 
-## What about vegan or plant-based dog food?
+## What about plant-based pet food?
 
 Food containing no meat, milk or other controlled animal products may fall outside the specific meat-and-dairy prohibition, but the label “vegan” should not be treated as a border guarantee. Ingredients, processing and other import controls still matter.
 
 If you intend to carry a plant-based product, keep it in its original labelled retail packaging and check it with the authority responsible for the country where you first enter the EU. Do not decant it into an unlabelled container before crossing the border.
 
-Any significant diet change should also be appropriate for your individual dog. Speak to your vet if the animal has medical or nutritional needs.
+Any significant diet change must also be appropriate for the individual animal. This is especially important for cats, whose nutritional needs differ from dogs and should not be improvised for the sake of border convenience. Speak to your vet before changing a dog or cat's diet, particularly where medical or nutritional needs are involved.
 
-## Is there an exception for prescription or medical dog food?
+## Is there an exception for prescription or medical pet food?
 
 Yes, but it is narrow. The European Commission permits special pet feed required for health-related reasons when a pet accompanies the passenger, provided the food:
 
@@ -58,11 +58,11 @@ Yes, but it is narrow. The European Commission permits special pet feed required
 - is a packaged proprietary brand product sold directly to consumers
 - remains in unbroken packaging, unless the pack is currently being used
 
-All of those conditions matter. The 2kg limit is not a general allowance for any dog food, and an ordinary commercial diet is not automatically “special pet feed” because it is the dog's normal brand.
+All of those conditions matter. The 2kg limit is not a general allowance for ordinary dog or cat food. A normal commercial diet is not automatically “special pet feed” because it is the animal's usual brand, is labelled for a sensitive stomach or was recommended informally.
 
 The Commission's public guidance does not prescribe one universal document that proves the health requirement. Before travelling, ask the authority at your first EU border what evidence it expects. A veterinary letter, prescription or clinical record may help explain the need, but do not assume it overrides a condition that has not been met.
 
-## Does the 2kg medical-food limit apply per dog or per person?
+## Does the 2kg medical-food limit apply per pet or per person?
 
 The European Commission describes the health-related pet-food allowance as no more than 2kg for the accompanying pet. Its detailed personal-import rules should be checked against the exact journey and number of animals rather than multiplied without confirmation.
 
@@ -72,9 +72,9 @@ If your pet needs more than 2kg, needs refrigerated food, or the journey will la
 
 The relevant border is normally where you first enter the EU. For a direct ferry or LeShuttle journey from Great Britain, that is France. If you enter through the Netherlands or Belgium before continuing to France, check the authorities for that first EU country instead.
 
-Customs controls and carrier pet check-in are different processes. A ferry company accepting a dog-food bag on board does not necessarily mean customs permits it into the EU.
+Customs controls and carrier pet check-in are different processes. A carrier accepting a bag or pouch of pet food on board does not necessarily mean customs permits it into the EU.
 
-If you are [taking your dog to Europe without a car](/posts/dog-uk-europe-without-car/), the same food rules apply to items in your personal luggage. The mode of transport does not create a pet-food exemption.
+If you are [travelling to Europe with a pet without a car](/posts/dog-uk-europe-without-car/), the same food rules apply to items in your personal luggage. The mode of transport does not create a pet-food exemption.
 
 ## What should I do with food needed during the crossing?
 
@@ -82,19 +82,19 @@ Ask the carrier what food may be used during the journey and what must be consum
 
 Pack only what the operator confirms is suitable for the crossing. Do not plan to carry prohibited leftovers through customs. Keep water, bowls and any permitted feeding instructions accessible without mixing them into your travel-document folder.
 
-## Can I buy my dog's usual food in France?
+## Can I buy my dog or cat's usual food in France?
 
 Often, but brand names and recipes can differ between the UK and EU. Research before departure:
 
 1. Search French retailers and the manufacturer's French or EU website.
 2. Compare the full ingredients and nutritional information, not only the brand and flavour name.
 3. Contact a shop near your accommodation to confirm stock.
-4. Reserve enough food if the dog needs a specific product.
-5. Identify an alternative with your vet before travel in case the planned product is unavailable.
+4. Reserve enough food if your dog or cat needs a specific product.
+5. Identify an appropriate alternative with your vet before travel in case the planned product is unavailable.
 
-If possible, introduce an appropriate alternative gradually before the trip rather than changing diet suddenly after a long journey. Veterinary advice is particularly important for allergies, gastrointestinal disease, kidney disease or other conditions requiring a controlled diet.
+If possible, introduce an appropriate alternative gradually before the trip rather than changing diet suddenly after a long journey. Cats may be particularly reluctant to accept unfamiliar food, so confirm availability rather than assuming they will eat a substitute. Veterinary advice is important for either species where allergies, gastrointestinal disease, kidney disease or other conditions require a controlled diet.
 
-## Could I send dog food to my accommodation?
+## Could I send pet food to my accommodation?
 
 Sending a parcel from Great Britain does not avoid EU import rules. Personal consignments sent by post or courier can still be controlled, and commercial delivery may introduce customs, veterinary or retailer restrictions.
 
@@ -120,7 +120,7 @@ No. Great Britain has its own personal food-import rules, which may change tempo
 
 Check the current GOV.UK guidance on [bringing food into Great Britain](https://www.gov.uk/bringing-food-into-great-britain) shortly before returning.
 
-## Dog-food planning checklist for France
+## Dog-and-cat-food planning checklist for France
 
 - Check every food, treat and chew for meat, milk and animal-derived ingredients.
 - Do not treat dry, sealed or personal-use food as automatically permitted.
@@ -133,17 +133,17 @@ Check the current GOV.UK guidance on [bringing food into Great Britain](https://
 - Recheck the rules for the first EU country if your route changes.
 - Check separate current rules for bringing food back to Great Britain.
 
-Food is only one part of the journey. Use our [guide to taking a dog from the UK to France](/posts/uk-to-france-dog-after-brexit/) for the microchip, rabies, AHC and return requirements, and organise your dates with the [free UK-to-Europe pet-travel checklist](https://ukpetpassport.com/?utm_source=blog&utm_medium=internal_link&utm_campaign=dog_food_france).
+Food is only one part of the journey. Dogs and cats both need the applicable microchip, rabies and travel-document preparation; dogs may also face treatment requirements that do not apply to cats. Use our [Animal Health Certificate guide](/posts/animal-health-certificate-guide/), see the wider journey in our [guide to taking a pet from the UK to France](/posts/uk-to-france-dog-after-brexit/), and organise your dates with the [free UK-to-Europe pet-travel checklist](https://ukpetpassport.com/?utm_source=blog&utm_medium=internal_link&utm_campaign=pet_food_france).
 
 ## The short answer
 
-Do not pack ordinary dog food containing meat or milk for entry from Great Britain into France. For most travellers, buying a suitable product after arrival is the simplest option. If your dog needs special food for health reasons, check the limited 2kg exception and all its conditions with the relevant authority before relying on it.
+Do not pack ordinary dog or cat food containing meat or milk for entry from Great Britain into France. For many travellers, arranging a suitable product from within the EU is the simplest option. If your pet needs special food for health reasons, check the limited 2kg exception and all its conditions with the relevant authority before relying on it.
 
 This article provides general information, not personalised customs, veterinary or legal advice. Import controls can change. Check the European Commission, French Customs, GOV.UK, your carrier and your vet for your actual travel dates and route.
 
 ## Official sources
 
-Reviewed on 8 September 2026 against:
+Originally published on 8 September 2026 and expanded to cover both dogs and cats on 20 September 2026. Reviewed against:
 
 - European Commission: [personal imports of products of animal origin](https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en)
 - Your Europe: [taking animal products, food or plants into the EU](https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm)
