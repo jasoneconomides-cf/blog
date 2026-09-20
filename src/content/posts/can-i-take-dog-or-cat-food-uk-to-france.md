@@ -1,7 +1,7 @@
 ---
 title: "Can I Take Dog or Cat Food from the UK to France?"
 description: "Can you take dog or cat food from Great Britain to France? Learn why ingredients matter and when the limited medical-food exception may apply."
-pubDate: "2026-09-08"
+pubDate: "2026-09-20"
 updatedDate: "2026-09-20"
 image: "/images/blog/can-i-take-dog-food-uk-to-france.jpg"
 imageAlt: "Dog owner packing pet travel supplies beside a dog, an unbranded bag of dry food and a car prepared for a journey."
@@ -156,7 +156,7 @@ This article provides general information, not personalised customs, veterinary 
 
 ## Official sources
 
-Originally published on 8 September 2026 and expanded to cover both dogs and cats on 20 September 2026. Reviewed against:
+Reviewed against:
 
 - European Commission: [personal imports of products of animal origin](https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en)
 - Your Europe: [taking animal products, food or plants into the EU](https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm)
