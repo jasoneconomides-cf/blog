@@ -17,26 +17,91 @@ const { post } = Astro.props;
 const { Content } = post;
 const { title, description, pubDate, updatedDate, image, imageAlt, category } = post.frontmatter;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
-const articleSchema = {
+const headings = await post.getHeadings();
+const articleHeadings = headings.filter(
+  ({ depth, text }) => depth === 2 && !['Source', 'Sources', 'Official sources'].includes(text)
+);
+const organizationId = new URL('/#organization', Astro.site).href;
+const websiteId = new URL('/#website', Astro.site).href;
+const webpageId = `${canonicalURL}#webpage`;
+const articleId = `${canonicalURL}#article`;
+const breadcrumbId = `${canonicalURL}#breadcrumb`;
+const imageURL = new URL(image, Astro.site).href;
+const schema = {
   '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: title,
-  description,
-  datePublished: pubDate,
-  dateModified: updatedDate ?? pubDate,
-  image: new URL(image, Astro.site).href,
-  mainEntityOfPage: canonicalURL,
-  author: {
-    '@type': 'Organization',
-    name: 'UK Pet Passport',
-    url: 'https://ukpetpassport.com'
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'UK Pet Passport',
-    url: 'https://ukpetpassport.com'
-  },
-  articleSection: category
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': organizationId,
+      name: 'UK Pet Passport',
+      url: 'https://ukpetpassport.com/'
+    },
+    {
+      '@type': 'WebSite',
+      '@id': websiteId,
+      url: new URL('/', Astro.site).href,
+      name: 'UK Pet Passport Blog',
+      publisher: { '@id': organizationId },
+      inLanguage: 'en-GB'
+    },
+    {
+      '@type': 'WebPage',
+      '@id': webpageId,
+      url: canonicalURL,
+      name: title,
+      description,
+      isPartOf: { '@id': websiteId },
+      breadcrumb: { '@id': breadcrumbId },
+      primaryImageOfPage: {
+        '@type': 'ImageObject',
+        url: imageURL
+      },
+      inLanguage: 'en-GB'
+    },
+    {
+      '@type': 'BlogPosting',
+      '@id': articleId,
+      url: canonicalURL,
+      headline: title,
+      description,
+      datePublished: pubDate,
+      dateModified: updatedDate ?? pubDate,
+      image: {
+        '@type': 'ImageObject',
+        url: imageURL
+      },
+      mainEntityOfPage: { '@id': webpageId },
+      isPartOf: { '@id': websiteId },
+      author: { '@id': organizationId },
+      publisher: { '@id': organizationId },
+      articleSection: category,
+      inLanguage: 'en-GB',
+      hasPart: articleHeadings.map(({ slug, text }) => ({
+        '@type': 'WebPageElement',
+        '@id': `${canonicalURL}#${slug}`,
+        url: `${canonicalURL}#${slug}`,
+        name: text
+      }))
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': breadcrumbId,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'UK Pet Passport Blog',
+          item: new URL('/', Astro.site).href
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: title,
+          item: canonicalURL
+        }
+      ]
+    }
+  ]
 };
 
 const formatDate = (date) =>
@@ -48,7 +113,7 @@ const formatDate = (date) =>
 ---
 
 <BaseLayout title={title} description={description} pubDate={pubDate} updatedDate={updatedDate} image={image}>
-  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   <article>
     <h1>{title}</h1>
     <p class="article-meta">
@@ -58,6 +123,16 @@ const formatDate = (date) =>
     </p>
     {image && <img class="article-image" src={image} alt={imageAlt} width="1400" height="788" />}
     <p class="description">{description}</p>
+    {articleHeadings.length > 0 && (
+      <nav class="article-contents" aria-labelledby="article-contents-title">
+        <h2 id="article-contents-title">In this post we cover:</h2>
+        <ul>
+          {articleHeadings.map(({ slug, text }) => (
+            <li><a href={`#${slug}`}>{text}</a></li>
+          ))}
+        </ul>
+      </nav>
+    )}
     <Content />
 
     <aside class="bulletin-cta" aria-labelledby="bulletin-title">
@@ -105,6 +180,34 @@ const formatDate = (date) =>
       object-fit: cover;
       margin: 0 0 1.5rem;
       border-radius: 8px;
+    }
+
+    .article-contents {
+      margin: 1.75rem 0 2.25rem;
+      padding: 22px 24px;
+      border: 1px solid #ddd6fe;
+      border-left: 5px solid #7c3aed;
+      border-radius: 8px;
+      background: #faf9ff;
+    }
+
+    .article-contents h2 {
+      margin: 0 0 12px;
+      color: #1a1a2e;
+      font-size: 1.15rem;
+    }
+
+    .article-contents ul {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .article-contents li {
+      margin: 0.4rem 0;
+    }
+
+    .article-contents a {
+      font-weight: 650;
     }
 
     .bulletin-cta {
